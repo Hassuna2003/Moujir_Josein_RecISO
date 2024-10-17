@@ -18,9 +18,12 @@ for i in range(5):
 print("Lista actual de números (incluyendo los números aleatorios): ", lista_numeros)
 
 #Pedimos al usuario un número para ver cuántas veces aparece en la lista
-numero_a_buscar = int(input("Introduce un número para ver cuántas veces aparece en la lista: "))
+numero_a_buscar = int(input("Introduce un número para ver cuántos números hay mayores que ese: "))
 
-cantidad_numeros = lista_numeros.count(numero_a_buscar)
+numeros_mayores = 0
+for numero in lista_numeros:
+    if numero > numero_a_buscar:
+        numeros_mayores += 1
 
 #Resultado de cuántas veces aparece en la lista el número:
-print("El número", numero_a_buscar ," aparece ", cantidad_numeros, " veces en la lista.")
+print("Hay", numeros_mayores , "numeros mayores que" , numero_a_buscar)
