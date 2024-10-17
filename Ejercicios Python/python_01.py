@@ -17,7 +17,7 @@ for i in range(5):
 #Mostramos la lista de la lista completa
 print("Lista actual de números (incluyendo los números aleatorios): ", lista_numeros)
 
-#Pedimos al usuario un número para ver cuántas veces aparece en la lista
+#Pedimos al usuario un número para ver cuántos son mayores a ese
 numero_a_buscar = int(input("Introduce un número para ver cuántos números hay mayores que ese: "))
 
 numeros_mayores = 0
